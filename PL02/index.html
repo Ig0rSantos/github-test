@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Igor Santos</title>
+</head>
+<body>
+    <h1>Minha primeira página HTML</h1>
+    <h2>Minha primeira página HTML</h2>
+    <h3>Minha primeira página HTML</h3>
+    <h4>Minha primeira página HTML</h4>
+    <h5>Minha primeira página HTML</h5>
+    <h6>Minha primeira página HTML</h6>
+
+     <p><b>lorem</b> ipsum <i>dolor</i> sit amet</p>
+     <hr> 
+     <p> 
+        o <u>Lorem Ipsum</u> é um <strong>gerador de texto automático</strong> 
+        que <em>servirá</em>  pra <ins>colocar </ins> conteúdo de teste nas páginas que iremos criar. 
+        De realçar ainda que o texto gerado é (quase) sempre diferente.
+     </p>
+     <br>
+     <p><mark>NOTA</mark>: o <del> Lorem Ipsum</del>  é um gerador de texto automático que servirá 
+        pra <sup>colocar</sup> conteúdo de <sub>teste</sub> nas <q>páginas</q> que <blockquote>iremos criar.</blockquote>  
+        <abbr title="Realçar">RA</abbr> De realçar ainda que o <cite>texto gerado é (quase)</cite>  sempre diferente.
+    </p>
+     <br>
+     <!--É possível em HTML inserir comentários ao longo do nosso código. Os comentários são linhas escritas 
+     no código que não são executadas/apresentadas no produto final. Há várias utilizações para os comentários, 
+     desde a documentação do código diretamente em cima do mesmo como a possibilidade de remover uma parte do 
+     código na execução sem ter de a apagar. -->
+     <h1> minha pagina<h1>
+
+
+    <hr>
+    <h1>Parte IV – Listas </h1>
+        <!-- <ul> - lista não ordenada (unordered list), utilizam um sistema de marcação nos itens que são apresentados. 
+            <ol> - lista ordenada (ordered list), utilizam uma série para marcação dos itens. 
+            <dl> - lista descritiva (description list), onde são associados um termo e a sua definição. Listas não ordenadas -->
+
+    <ul>
+        <!--<ul> -->
+        <li>itemA</li>
+        <li>itemB</li>
+        <li>itemC</li>
+    </ul>
+
+    <hr>
+    <ol>
+    <!-- <ol> -->
+         <li>itemA</li>
+        <li>itemB</li>
+        <li>itemC</li>
+    </ol>
+
+    <dl>
+    <!-- <dl> -->
+        <dt>HTML</dt>
+        <dd>“HTML é a abreviatura de Hypertext Markup Language, ou seja, Linguagem de Marcação de Hipertexto. É uma notação usada para a publicação de conteúdo (texto, imagens, vídeos, áudio, …) na web.”</dd>
+        <dt>CSS</dt>
+        <dd>CSS é a abreviatura de Cascading Style Sheets, ou seja, Folhas de Estilo em Cascatas. É uma linguagem de estilo usada para definir a apresentação de documentos HTML.”</dd>
+        <dt>JavaScript</dt>
+        <dd>JavaScript é uma linguagem de programação leve, interpretada ou compilada para web. É amplamente utilizada para criar e desenvolver páginas web interativas.”</dd>
+    </dl>
+
+    <h1>Parte V – links e imagens </h1>
+    <!--A inclusão de links e imagens é uma das partes mais interessantes do HTML pois começamos a ter a possibilidade de maior interação utilizador-máquina.
+    Para inclusão destes elementos utilizamos as tags: 
+        <img> - referenciar uma imagem 
+        <a> - referenciar um link -->
+
+    <a href="https://www.google.pt/">Link</a>
+        <p>O link acima abre na mesma janela</p>
+
+    <a href="https://www.google.pt/" target="_blank">Link</a>
+        <p>O link acima abre numa nova janela</p>
+
+    <!--Adicionar imagens-->
+
+        <img src="https://static.dinamize.com.br/dinamizeszmsdg3x/uploads/2024/06/google-imagens-icon2-min.png" alt="">
+    
+        <!-- IMPORTANTE ADICIONAR A EXTENSAO DO FICEIRO!-->    
+        <img src="BANNERS-CESAE_NP-1.png"   alt="BANNERS-CESAE_NP-1" width="500" height="333"> 
+
+        <hr>
+        <br>
+        <h1>Parte VI – Tabelas </h1>
+        <!--<table> - para identificação do início da tabela. 
+        <tr> - para identificação de uma linha na tabela. 
+        <td> - para identificação de uma célula (coluna) na linha onde se insere. 
+        <th> - semelhante ao <td> mas usado para cabeçalhos (tem uma formatação diferente).-->
+
+        <table border="1px">
+
+            <tr>
+                <th>Cabeçalho 1</th>
+                <th>Cabeçalho 2</th>
+            </tr>
+            <tr>
+                <td>Elemento 1</td>
+                <td>Elemento 2</td>
+            </tr>
+            <tr>
+                <td>Elemento 3</td>
+                <td>Elemento 4</td>
+            </tr>
+
+            </table>
+
+            <hr>
+            <br>
+            <h1>Parte VII – Tabelas semânticas </h1>
+            <table border="1px">
+                <caption>lista de alunos</caption>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Cidade</th> 
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Ana</td>
+                        <td>28</td>
+                        <td>Lisboa</td>
+                    </tr>
+                    <tr>
+                        <td>Zé</td>
+                        <td>35</td>
+                        <td>Porto</td>
+                    </tr>
+                </tbody>
+
+                <!-- colspan é um parâmetro que colocamos associado a uma coluna 
+                 para juntar várias colunas; rowspan faz o mesmo, mas para juntar 
+                 várias linhas-->
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total: 2 alunos</td>
+                    </tr>
+                </tfoot>
+
+</body>
+</html>
