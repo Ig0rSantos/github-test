@@ -1,0 +1,27 @@
+p {
+  color: rgb(53, 9, 9);
+  text-align: left;
+  font-style: italic;
+}
+
+h1 {
+  color: rgb(124, 126, 12);
+}
+
+h2 {
+  color: rgb(92, 23, 23)
+}
+
+h4 {
+  background-color: rgb(49, 255, 30);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #a1a1a5;
+  background-image: url('https://www.shutterstock.com/image-photo/six-nine-different-answers-perspective-600nw-2358113077.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
