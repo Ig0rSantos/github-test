@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>arte III – Formulários </title>
+</head>
+<body>
+    
+    <h1>Parte III – Formulários  </h1>
+<form action="form_parte3.php" method="post">
+    <fieldset>
+        <legend>Formulário de Contato do CESAE</legend>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Escreva o seu nome" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="Genero">Género:</label><br> 
+        <input type="radio" id="Genero" name="Genero" value="masculino">
+        <label for="masculino">Masculino</label><br>
+        <input type="radio" id="Genero" name="Genero" value="feminino">
+        <label for="feminino">Feminino</label><br><br>
+
+        <label for="Date">Data atual:</label>
+        <input type="date" id="Date" name="Date" required><br><br>
+
+        <label for="Turma">Turma:</label>
+        <select id="Turma" name="Turma">
+            <option value="Web Developer & Mobile">Web Developer & Mobile</option>
+            <option value="Outra">Outra</option>
+        </select><br><br>
+
+        <label for="Mensagem">Mensagem:</label><br>
+        <textarea id="Mensagem" name="Mensagem" rows="3" cols="30" required></textarea><br><br>
+        <input type="submit" value="Limpar">
+        <input type="submit" value="Enviar">
+    </fieldset>
+</form>
+
+</body>
+</html>

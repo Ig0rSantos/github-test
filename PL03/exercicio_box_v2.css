@@ -1,0 +1,81 @@
+
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* CONTAINER PRINCIPAL (GRID / FLEXBOX RESPONSIVO) */
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: stretch;
+            gap: 24px;
+            max-width: 1150px;
+            width: 100%;
+        }
+
+        /* ESTILO DO CARTÃO */
+        .card {
+            background-color: #ffffff;
+            border: 3.5px solid #0a2356; /* Borda azul-escuro marcante */
+            border-radius: 16px;
+            padding: 18px;
+            width: 100%;
+            max-width: 340px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(10, 35, 86, 0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(10, 35, 86, 0.1);
+        }
+
+        /* ÁREA DA IMAGEM / PLACEHOLDER */
+        .card-image-placeholder {
+            width: 100%;
+            height: 200px;
+            background-color: #e5ecf6; /* Tom azulado suave para o placeholder */
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #718096;
+            font-size: 0.95rem;
+            line-height: 1.4;
+            margin-bottom: 24px;
+            user-select: none;
+        }
+
+        .card-image-placeholder span.dimensions {
+            font-size: 0.85rem;
+            opacity: 0.85;
+        }
+
+        /* NOME / TÍTULO DO CARTÃO */
+        .card-title {
+            color: #0b1f48;
+            font-size: 1.65rem;
+            font-weight: 800;
+            margin-bottom: 12px;
+            letter-spacing: -0.02em;
+        }
+
+        /* DESCRIÇÃO / TEXTO DO CARTÃO */
+        .card-description {
+            color: #2d3748;
+            font-size: 1.05rem;
+            font-weight: 500;
+            line-height: 1.5;
+            max-width: 260px;
+            margin-bottom: 8px;
+        }
