@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica Laboral 03 - multimedia</title>
+
+    <!-- <link rel="stylesheet" type="text/css" href="myStyle.css"> -->
+   
+    <!-- invocar os comandos inseridos no ficheiro "controls.css"-->
+     <!-- ATALHO PARA OS PATH DOS FILES OU DOS FICHEIROS, DEVE-SE ESCREVER (../)-->
+    <link rel="stylesheet"type="text/css" href="../controls.css">
+    
+    
+
+   
+</head>
+<body>
+    <h1>Parte II – conteúdo multimédia  </h1>
+
+<!--Elementos de multimédia são comummente usados em páginas HTML, com as tags abaixo vamos analisar como adicionar áudio e vídeos a uma página HTML. 
+
+<audio> - usado para inserir um áudio.   
+
+<video> - usado para inserir um vídeo.  
+
+<iframe> - usado para inserir vários tipos de conteúdo na web, por exemplo uma página web dentro da nossa página ou um vídeo do YouTube. -->
+
+
+    <!--Atributos Importantes a Conhecer:
+Atributos de <audio> e <video>:
+
+ - controls: Mostra os botões de reproduzir, pausar, volume e barra de progresso.
+
+ - autoplay: Inicia a reprodução automaticamente (muitos navegadores bloqueiam se houver som).
+
+ - loop: Faz o ficheiro repetir continuamente.
+
+ - muted: Silencia o som por defeito.
+
+ - poster (apenas para <video>): Define uma imagem de pré-visualização antes de o vídeo ser reproduzido.
+
+ - <source>: Permite colocar vários formatos do mesmo ficheiro (ex: .mp4 e .webm). O navegador usará o primeiro formato que suportar.-->
+
+    <div class="media-card">
+    <h3>Exemplo de áudio</h3>
+    <p> Ouvir a muica</p>
+     <audio controls>
+        <source src="../PL03/media/purrplecat-long-day-518602.mp3" controls>
+     </audio>
+</div>
+    
+
+<div>
+    <div class="img, video">
+    <h3>Exemplo de vídeo</h3>
+    <p>Assistir ao video</p>
+     <video controls> 
+        <source src="../PL03/media/384849_medium.mp4" type="video/mp4">
+     </video>
+</div>
+
+
+<div class="iframe">
+    <h3>Exemplo de iframe</h3>
+    <p>ver iframe </p>
+        <iframe 
+        source src="../PL03/media/istockphoto-912474846-1024x1024.jpg" frameborder="0"  allowfullscreen>
+    </iframe>    
+</div> 
+
+
+</body>    
+</html>
