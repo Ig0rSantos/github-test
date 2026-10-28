@@ -9,7 +9,7 @@
    
     <!-- invocar os comandos inseridos no ficheiro "controls.css"-->
      <!-- ATALHO PARA OS PATH DOS FILES OU DOS FICHEIROS, DEVE-SE ESCREVER (../)-->
-    <link rel="stylesheet"type="text/css" href="../controls.css">
+    <link rel="stylesheet"type="text/css" href="../PL03/multimedia.css">
     
     
 
@@ -42,31 +42,37 @@ Atributos de <audio> e <video>:
 
  - <source>: Permite colocar vários formatos do mesmo ficheiro (ex: .mp4 e .webm). O navegador usará o primeiro formato que suportar.-->
 
-    <div class="media-card">
+<div class="media-card">
     <h3>Exemplo de áudio</h3>
     <p> Ouvir a muica</p>
      <audio controls>
-        <source src="../PL03/media/purrplecat-long-day-518602.mp3" controls>
+        <source src="../PL03/media/purrplecat-long-day-518602.mp3" type="audio/mpeg">
      </audio>
-</div>
-    
+    </div>
+
 
 <div>
-    <div class="img, video">
+    <div class="media-card img">
     <h3>Exemplo de vídeo</h3>
     <p>Assistir ao video</p>
-     <video controls> 
+     <video controls width="100%"> 
         <source src="../PL03/media/384849_medium.mp4" type="video/mp4">
      </video>
 </div>
 
 
-<div class="iframe">
+<div class="media-card img">
+    <h3>Video do Youtube</h3>
+    <p>Assistir a um video ditretamente do youtube</p>
+    <!--ir para o video, clicar partilhar, escolher opcao "incorporar"-->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZGO2It1eQF8?si=m4rX69_gR6tvJqXX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+
+<div class="media-card iframe">
     <h3>Exemplo de iframe</h3>
-    <p>ver iframe </p>
-        <iframe 
-        source src="../PL03/media/istockphoto-912474846-1024x1024.jpg" frameborder="0"  allowfullscreen>
-    </iframe>    
+    <p>Website externo</p>
+        <iframe src="https://cesaedigital.pt/fldrSite/default.aspx" width="600" height="400" title="Website do cesae digital"></iframe>
 </div> 
 
 

@@ -1,30 +1,36 @@
 body {
-  background-color: rgb(186, 184, 197);
-  color: rgb(255, 255, 255);
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}   
+    background-color: rgb(186, 184, 197);
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-/* Pai: o ponto de referência (position: relative) */
+/* Posiçao do container (position: relative) */
 .container {
-    
-    position: relative;  /* para que os cartões possam ser posicionados relativamente a ele */
-    width: 980px;          
-    height: 300px;  
+
+    position: relative;
+    /* para que os cartões possam ser posicionados relativamente a ele */
+    width: 980px;
+    height: 300px;
     padding: 400px 20px;
-    margin: 0 flex;          /* centra horizontalmente */
-    top:200px;     
+    margin: 0 flex;
+    /* centra horizontalmente */
+    top: 200px;
 }
 
 
-    /* Cartão: o box model */
+/* Cartão: o box model */
 .card {
-    box-sizing: border-box;      /* os 300px já incluem padding e borda */
+    box-sizing: border-box;
+    /* os 300px já incluem padding e borda */
     width: 300px;
-    padding: 16px;               /* dentro da borda */
-    border: 3px solid #1d1148;   /* a moldura */
-    border-radius: 20px;         /* cantos arredondados */
+    padding: 16px;
+    /* dentro da borda */
+    border: 3px solid #1d1148;
+    /* a moldura */
+    border-radius: 20px;
+    /* cantos arredondados */
     background-color: #af2c2c;
     text-align: center;
 
@@ -33,25 +39,28 @@ body {
     top: 0;
 }
 
-.card1{
-    left:0;
+.card1 {
+    left: 0;
 }
 
-.card2{
-    left: 340px;  /* 300px do 1.º cartão + 40px de espaço */
+.card2 {
+    left: 340px;
+    /* 300px do 1.º cartão + 40px de espaço */
 }
 
-.card3{
-    left: 680px; /* 2 × 340px */
+.card3 {
+    left: 680px;
+    /* 2 × 340px */
 }
 
 
 
 /*imagem */
-.foto{
-     width: 100%;
+.foto {
+    width: 100%;
     height: 140px;
-    object-fit: cover;           /* recorta a foto sem a deformar */
+    object-fit: cover;
+    /* recorta a foto sem a deformar */
     border-radius: 12px;
 
 }
