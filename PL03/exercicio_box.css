@@ -31,9 +31,9 @@ body {
     /* a moldura */
     border-radius: 20px;
     /* cantos arredondados */
-    background-color: #af2c2c;
+    background-color: #ac7676;
     text-align: center;
-
+    
     /* Posicionamento dentro do element relative */
     position: absolute;
     top: 0;
@@ -41,19 +41,26 @@ body {
 
 .card1 {
     left: 0;
+    width: max-content;
+    height: max-content;
+    font: 100;
+    color: #1d1148;
 }
 
 .card2 {
     left: 340px;
     /* 300px do 1.º cartão + 40px de espaço */
+    font: 100;
+    color: #1d1148;
 }
+
 
 .card3 {
     left: 680px;
     /* 2 × 340px */
+    font: 100;
+    color: #1d1148;
 }
-
-
 
 /*imagem */
 .foto {
